@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HotProduct() {
   return (
     <header className="container mx-auto px-4 py-12 lg:py-16">
-      <div className="flex relative md:grid-cols-[auto_1fr]">
+      <div className="relative grid grid-cols-1 gap-8 md:grid-cols-[auto_1fr]">
         {/* Vertical text */}
         <div className="writing-mode-vertical hidden text-xl font-medium tracking-wider text-zinc-900 md:block pt-6">
           EXPLORE NEW AND POPULAR STYLES
