@@ -1,7 +1,8 @@
-// import ArrayMap from "./components/ArrayMap";
+import hotproducts from "./components/hotproducts";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Categories from "./components/categories";
+import HotProduct from "./components/hotproducts";
 // import Footer from "./components/footer";
 // import ParentComponent from "./components/ParentComponent";
 
@@ -12,8 +13,8 @@ export default function Home() {
     <Categories />
     {/* <Footer /> */}
     {/* <Hero /> */}
-      {/* <ParentComponent />
-      <ArrayMap /> */}
+      <HotProduct />
+      {/* <ArrayMap /> */}
     </>
   );
 }
