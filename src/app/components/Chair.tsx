@@ -12,8 +12,7 @@ export default function Chair() {
                 {data.map((item)=>(
                     
                     <div key={item.id} className="bg-white rounded-md lg:my-0 ">
-                        
-                        <Link href={`/${item.id}`}>
+                      <Link href={`/${item.id}`}>
                         <div>
                             <div className="">
                               

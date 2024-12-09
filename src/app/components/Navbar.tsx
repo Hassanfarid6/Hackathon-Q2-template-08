@@ -85,11 +85,9 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex w-[434px] h-[580px] mt-32 mx-auto  items-center justify-center">
-          <Image src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" />
+          <Image src="/Product1.png" width={434} height={580} className="object-contain p-2 mt-4" alt="Product" />
            {/* <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" /> */}
-        </div>
-       
-    
+        </div>   
      </div>
     </div>
     <Hero />
