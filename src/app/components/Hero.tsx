@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 import Chair from "./Chair"
 
@@ -9,7 +10,8 @@ const Hero =()=>{
         <div className="flex flex-col  mx-auto justify-center  w-[1340px]">
 
               <div className='ml-4 p-3 m-2 w-[1321] h-[140px] rounded-[6px] text-black '>
-                <img src="/CompanyLogo.png" alt="" />
+              <Image src="/CompanyLogo.png" alt="Logo"/>
+                {/* <Image src="/CompanyLogo.png" alt="" /> */}
             </div>
 
             <div className="">

@@ -1,8 +1,8 @@
 import React from 'react'
+import Image from "next/image"
 import { RiArrowDropDownLine } from "react-icons/ri";
 // import { CiCircleAlert } from "react-icons/ci";
 import { IoAlertCircleOutline } from "react-icons/io5";
-import Image from 'next/image';
 import { FaArrowRightLong } from "react-icons/fa6";
 import Hero from './Hero';
 
@@ -85,7 +85,8 @@ const Navbar = () => {
           </button>
         </div>
         <div className="flex w-[434px] h-[580px] mt-32 mx-auto  items-center justify-center">
-           <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" />
+          <Image src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" />
+           {/* <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" /> */}
         </div>
        
     
