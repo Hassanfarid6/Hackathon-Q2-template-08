@@ -1,9 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    swcMinify: true,
-  };
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+    // swcMinify: true,
+  // };
   
-  export default nextConfig;
-  
+  // export default nextConfig;
+  /** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default nextConfig;
+
 
   
