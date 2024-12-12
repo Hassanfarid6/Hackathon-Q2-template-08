@@ -15,9 +15,9 @@ const Hero =()=>{
             </div>
 
             <div className="">
-                <h1 className="font-semibold mt-4 text-4xl ">Featured Products</h1>
+                <h1 className="font-semibold mt-4 mb-6 text-4xl ">Featured Products</h1>
             </div>
-            <div className="m-2 lg:m-4 sm:m-2 my-12 mb-6">
+            <div className="">
                 <Chair />
             </div>
 

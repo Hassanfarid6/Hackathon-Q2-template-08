@@ -7,8 +7,8 @@ export default function Chair() {
     const data = details
     return(
         <>
-        <div  className="bg-[#f3f8ff]">
-            <div className="container flex justify-evenly flex-wrap lg:flex-nowrap">
+        <div  className="bg-[#fff]">
+            <div className="container flex justify-between flex-wrap lg:flex-nowrap">
                 {data.map((item)=>(
                     
                     <div key={item.id} className="bg-white rounded-md lg:my-0 ">
