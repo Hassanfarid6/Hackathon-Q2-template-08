@@ -1,10 +1,7 @@
 import React from 'react'
-import Image from "next/image"
+import Link from 'next/link';
 import { RiArrowDropDownLine } from "react-icons/ri";
-// import { CiCircleAlert } from "react-icons/ci";
 import { IoAlertCircleOutline } from "react-icons/io5";
-import { FaArrowRightLong } from "react-icons/fa6";
-import Hero from './Hero';
 
 const Navbar = () => {
   return (
@@ -59,12 +56,24 @@ const Navbar = () => {
     <div className='w-[1920px] h-[74px] bg-[#fff] text-black'>
 
     <div className='flex w-[70%] mx-auto justify-between text-xs pt-[2px] font-normal opacity-85'>
+
+
           <ul className='flex'>
-               <li className='pl-5 pt-5 text-[#029FAE]'>Home</li>
-               <li className='p-5'>Shop</li>
-               <li className='p-5'>Product</li>
-               <li className='p-5'>Pages</li>
-               <li className='p-5'>About</li>
+               <li className='pl-5 pt-5 text-[#029FAE]'>
+                <Link href="/">Home</Link>
+                </li>
+               <li className='p-5'>
+                <Link href="/">Shop</Link>
+                </li>
+               <li className='p-5'>
+                <Link href="../allProducts">Product</Link>
+                </li>
+               <li className='p-5'>
+                <Link href="/">Pages</Link>
+                </li>
+               <li className='p-5'>
+                <Link href="/">About</Link>
+                </li>
           </ul>
           <p className='px-0 pt-5' >Contact: (0800) 155-1004</p>
       
@@ -72,25 +81,6 @@ const Navbar = () => {
     </div>
     </header>
     <hr />
-    {/*   picture */}
-
-    <div className='flex flex-col mx-auto justify-center w-[1920px]'>
-     <div className='flex mx-auto bg-[#F0F2F3] w-[1340px] h-[790px] rounded-[6px] text-black '>
-
-        <div className='w-[557px] mt-64 ml-12 mr-12 h-[337px]'>
-          <p className='text-lg'>Welcome to chairy</p>
-          <h1 className='text-[47px] leading-[50px] mt-12 mb-14 font-bold'>Best Furniture Collection For Your Interior</h1>
-          <button className='w-[171px] h-[52px] rounded-xl bg-[#029FAE] text-white'>Shop Now
-           <FaArrowRightLong className='inline-block ml-2 text-2xl' />
-          </button>
-        </div>
-        <div className="flex w-[434px] h-[580px] mt-32 mx-auto  items-center justify-center">
-          <Image src="/Product1.png" width={434} height={580} className="object-contain p-2 mt-4" alt="Product" />
-           {/* <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" /> */}
-        </div>   
-     </div>
-    </div>
-    <Hero />
     </>
   )
 }

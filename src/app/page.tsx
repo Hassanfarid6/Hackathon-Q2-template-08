@@ -1,14 +1,10 @@
-import Navbar from "./components/Navbar";
-import Categories from "./components/categories";
-import NewProduct from "./components/newproducts";
-import OurProduct from "./components/ourProduct";
+// import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 export default function Home() {
   return (
     <>
-    <Navbar />
-    {/* <Categories /> */}
-      {/* <NewProduct />
-    <OurProduct /> */}
+    {/* <Navbar /> */}
+    <Hero />
     </>
   );
 }
