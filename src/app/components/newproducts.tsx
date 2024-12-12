@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function NewProduct() {
   return (
-    <header className="container mx-auto px-4 py-12 lg:py-16">
+    <header className="container mx-auto py-12 lg:py-16">
         {/* Vertical text */}
-        <div className="inline-block writing-mode-vertical text-4xl ml-16 mb-8 font-medium tracking-wider text-zinc-900 md:block pt-6">
+        <div className="inline-block writing-mode-vertical text-4xl mb-8 font-bold tracking-wider text-zinc-900 md:block pt-6">
           EXPLORE NEW AND POPULAR STYLES
         </div>
       <div className="relative grid grid-cols-1 gap-8 md:grid-cols-[auto_1fr]">

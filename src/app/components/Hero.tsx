@@ -5,7 +5,7 @@ import Chair from "./Chair"
 const Hero =()=>{
     // console.log(props)
       return (
-      <div className="flex flex-col w-[1920px] mx-auto justify-center h-[1850] text-black">
+      <div className=" w-[1920px] mx-auto justify-center h-[1850] text-black">
 
         <div className="flex flex-col  mx-auto justify-center  w-[1340px]">
 

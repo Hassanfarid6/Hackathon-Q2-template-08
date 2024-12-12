@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
     <Navbar />
-    <Categories />
-      <NewProduct />
-    <OurProduct />
+    {/* <Categories /> */}
+      {/* <NewProduct />
+    <OurProduct /> */}
     </>
   );
 }

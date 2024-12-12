@@ -1,4 +1,7 @@
 "use client"
+import Categories from "./categories";
+import NewProduct from "./newproducts";
+import OurProduct from "./ourProduct";
 import { details } from "../details/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,6 +36,9 @@ export default function Chair() {
                     </div>
                 ))}
             </div>
+                <Categories />
+                <NewProduct />
+                <OurProduct />
         </div>
          </>
     )
