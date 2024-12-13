@@ -7,6 +7,7 @@ export default function Pages() {
   return (
     <>
     <div className="container flex justify-center mx-auto w-[1920px] py-20">
+        
     <div className="w-[675px] h-[607px]">
     <Image
                   src='/02.jpg'
@@ -14,7 +15,7 @@ export default function Pages() {
                   height={400}
                   width={400}
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
+     />
     </div>
     <div className="w-[541px] ml-24 h-[607px]">
         <h2 className="w-[541px] h-[132px] font-bold text-6xl mb-10">
@@ -40,11 +41,78 @@ export default function Pages() {
         <div className=" w-[1447px] h-[409px]">
 
         <div className="flex justify-between text-4xl font-semibold">
-
                 <h2>FEATURED PRODUCTS</h2>
-
-                <p className="text-lg border-b border-gray-400">View all</p>
+                <p className="text-lg border-b border-gray-800 leading-tight pb-1">View all</p>
         </div>
+
+        <div className="flex justify-between">
+            <div>
+                <Image
+                  src='/07.jpg'
+                  alt="Image"
+                  height={400}
+                  width={400}
+                  className="h-[263px] mt-10 w-[270px] object-cover"
+                />
+                <div className="flex justify-between mt-4">
+                    <p className="text-lg">Library Stool Chair</p>
+                    <p className="text-lg font-bold">$99</p>
+                </div>
+            </div>            
+            <div>
+                <Image
+                  src='/01.jpg'
+                  alt="Image"
+                  height={400}
+                  width={400}
+                  className="h-[263px] mt-10 w-[270px] object-cover"
+                />
+                <div className="flex justify-between mt-4">
+                    <p className="text-lg">Library Stool Chair</p>
+                    <p className="text-lg font-bold">$99</p>
+                </div>
+            </div>            
+            <div>
+                <Image
+                  src='/14.jpg'
+                  alt="Image"
+                  height={400}
+                  width={400}
+                  className="h-[263px] mt-10 w-[270px] object-cover"
+                />
+                <div className="flex justify-between mt-4">
+                    <p className="text-lg">Library Stool Chair</p>
+                    <p className="text-lg font-bold">$99</p>
+                </div>
+            </div>            
+            <div>
+                <Image
+                  src='/03.jpg'
+                  alt="Image"
+                  height={400}
+                  width={400}
+                  className="h-[263px] mt-10 w-[270px] object-cover"
+                />
+                <div className="flex justify-between mt-4">
+                    <p className="text-lg">Library Stool Chair</p>
+                    <p className="text-lg font-bold">$99</p>
+                </div>
+            </div>            
+            <div>
+                <Image
+                  src='/05.jpg'
+                  alt="Image"
+                  height={400}
+                  width={400}
+                  className="h-[263px] w-[270px] mt-10 object-cover"
+                />
+                <div className="flex justify-between mt-4">
+                    <p className="text-lg">Library Stool Chair</p>
+                    <p className="text-lg font-bold">$99</p>
+                </div>
+            </div>            
+        </div>
+
 
         </div>
     </div>
