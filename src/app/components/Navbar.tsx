@@ -55,7 +55,7 @@ const Navbar = () => {
     </div>
     <div className='w-[1920px] h-[74px] bg-[#fff] text-black'>
 
-    <div className='flex w-[70%] mx-auto justify-between text-xs pt-[2px] font-normal opacity-85'>
+    <div className='flex w-[70%] mx-auto justify-between text-base pt-[2px] font-normal opacity-95'>
 
 
           <ul className='flex'>
@@ -72,7 +72,10 @@ const Navbar = () => {
                 <Link href="../pages">Pages</Link>
                 </li>
                <li className='p-5'>
-                <Link href="/">About</Link>
+                <Link href="../about">About</Link>
+                </li>
+               <li className='p-5'>
+                <Link href="../about">Contact</Link>
                 </li>
           </ul>
           <p className='px-0 pt-5' >Contact: (0800) 155-1004</p>

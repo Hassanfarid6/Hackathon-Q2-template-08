@@ -12,7 +12,7 @@ export default function Shop() {
         <div className="w-[1100px] h-[550px]">
             <h1  className="text-2xl font-medium">Bag</h1>
 
-            <div  className="flex w-[963px] h-[211px] border-b-2 my-5 py-7">
+            <div  className="flex w-[963px] h-[211px] border-b-2 my-3 py-7">
 
             <div className="w-[150px] h-[150px]">
             <Image
