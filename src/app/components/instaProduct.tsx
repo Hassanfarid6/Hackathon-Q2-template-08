@@ -12,8 +12,8 @@ export default function InstaProduct() {
        <div className=" w-full h-auto bg-[#F0F2F3]">
 
         
-      <div className="max-w-3xl mx-auto py-16  text-center w-[760px] h-[165px]">
-        <h2 className="font-medium text-[50px] px-0 mt-4">
+      <div className="max-w-3xl mx-auto py-6  text-center w-[760px] h-[165px]">
+        <h2 className="font-medium text-[50px] px-0  mb-4">
           Or Subscribe to the Newsletter
         </h2>
           <div className="flex text-center px-3 text-[#6a6d6f] font-semibold">
