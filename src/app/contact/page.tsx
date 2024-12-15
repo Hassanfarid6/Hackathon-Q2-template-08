@@ -1,14 +1,17 @@
 import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
+import { GrTrophy } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
+import { FaCheckCircle } from "react-icons/fa";
+import { BiSupport } from "react-icons/bi";
 
 export default function Contact() {
 
 
   return (
     <>
-    <div className="container flex justify-center mx-auto w-[1920px] h-[1144px] py-20">
+    <div className="container flex justify-center mx-auto w-[1920px] h-[1000px] py-20">
         <div>
 
         <div className="w-[1440px] flex flex-col items-center">
@@ -25,15 +28,15 @@ export default function Contact() {
                 < FaLocationDot className="w-[22px] h-[27px]" />
                 <div className="ml-5">
                 <h3>Address</h3>
-                <p className="w-[212px] h-[57px]">236 5th SE Avenue, New York NY10000, United States</p>
+                <p className="w-[212px] h-[57px]">236 5th SE Avenue, Malir Karachi, Pakistan</p>
                 </div>
              </div>
              <div  className="flex mt-10 ml-10">
                 <  FaPhoneAlt className="w-[22px] h-[27px]" />
                 <div className="ml-5">
                 <h3>Phone</h3>
-                <p className="w-[212px] h-[57px]">Mobile: +(84) 546-6789
-                Hotline: +(84) 456-6789</p>
+                <p className="w-[212px] h-[57px]">Mobile: +(923) 010-228-138
+                Hotline: +(923) 162-933-386</p>
                 </div>
              </div>
              <div  className="flex mt-10 ml-10">
@@ -46,29 +49,57 @@ export default function Contact() {
              </div>
             </div>
 
+                {/* form */}
             <div className="w-[635px] h-[923px]">
                 <div className="w-[530px] text-xl h-[121px] mt-20">
                     <h2>Your name</h2>
-                    <input type="text" placeholder="ABC" className="w-[520px] border-2 border-gray-400 h-[60px] rounded-xl mt-3"/>
+                    <input type="text" placeholder=" ABC" className="w-[520px] border-2 border-gray-400 h-[60px] rounded-xl mt-3"/>
                 </div>
                 <div className="w-[530px] text-xl h-[121px] ">
                     <h2>Email adress</h2>
-                    <input type="text" placeholder="Abc@def.com" className="w-[520px] h-[60px] border-2 border-gray-400 rounded-xl mt-3"/>
+                    <input type="text" placeholder=" Abc@def.com" className="w-[520px] h-[60px] border-2 border-gray-400 rounded-xl mt-3"/>
                 </div>
                 <div className="w-[530px] text-xl h-[121px] ">
                     <h2>Subject</h2>
-                    <input type="text" placeholder="This an Optional" className="w-[520px] h-[60px] rounded-xl mt-3 border-2 border-gray-400"/>
+                    <input type="text" placeholder=" This an Optional" className="w-[520px] h-[60px] rounded-xl mt-3 border-2 border-gray-400"/>
                 </div>
                 <div className="w-[530px] text-xl h-[121px] ">
                     <h2>Message</h2>
-                    <input type="text" placeholder="Hi! I do like to ask about" className="w-[520px] h-[70px] rounded-xl mt-3 border-2 border-gray-400"/>
+                    <input type="text" placeholder=" Hi! I do like to ask about" className="w-[520px] h-[90px] rounded-xl my-7 border-2 border-gray-400"/>
                 </div>
-
+                <button className="w-[237px] text-xl text-white bg-[#029FAE] rounded-xl mt-14 ml-32 h-[55px]">Submit</button>
             </div>
         </div>
-        
         </div>
     </div>
+        <div className="w-[1320px] flex justify-center items-center mx-auto bg-[#F4F4F4] h-[270px]">
+            <div className="flex justify-between w-[1188px] h-[70px]">
+                <div className="flex w-[337px]  h-[70px]">
+                <GrTrophy className="w-[52px] h-[60px]" />
+                <div>
+                <h2 className="text-xl font-semibold ml-5">High Quality</h2>
+                <p className="text-lg font-normal ml-5">crafted from top materials</p>
+                </div>
+
+                </div>
+                <div className="flex w-[337px]  h-[70px]">
+                < FaCheckCircle className="w-[52px] h-[60px]" />
+                <div>
+                <h2 className="text-xl font-semibold ml-5">Warranty Protection</h2>
+                <p className="text-lg font-normal ml-5">Over 2 years</p>
+                </div>
+
+                </div>
+                <div className="flex w-[337px]  h-[70px]">
+                <BiSupport  className="w-[52px] h-[60px]" />
+                <div>
+                <h2 className="text-xl font-semibold ml-5">24 / 7 Support</h2>
+                <p className="text-lg font-normal ml-5">Dedicated support</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
         
     </>
   );
