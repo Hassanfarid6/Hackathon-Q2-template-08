@@ -1,6 +1,8 @@
 import Image from "next/image";
-import { FaRegHeart } from "react-icons/fa";
-import { ShoppingCart } from "lucide-react";
+import { TbTruckDelivery } from "react-icons/tb";
+import { GoCheckCircle } from "react-icons/go";
+import { LuSprout } from "react-icons/lu";
+import { TbFileInvoice } from "react-icons/tb";
 
 export default function Shop() {
 
@@ -27,13 +29,93 @@ export default function Shop() {
                   className="h-[478px] w-[619px] object-cover transition-transform duration-300 group-hover:scale-105"
      />
         </div>
-        <div>
-            <h1 className="text-3xl my-3 font-bold">What makes our Brand Different</h1>
-
-        </div>
-                       
-        
     </div>
+                       
+        {/* Brands  */}
+    <div className="container flex flex-col items-center my-10 mb-32 mx-auto w-[1920px]">
+            <h1 className=" text-3xl my-3 font-bold">What makes our Brand Different</h1>
+
+          <div className="flex justify-between w-[1320px] h-[244px] my-10 ">
+            
+          <div className=" flex flex-col w-[309px] h-[244px] bg-[#F9F9F9] text-[#007580]">
+             <  TbTruckDelivery className="h-[24px]  ml-16 mt-11 mb-1 w-[24px]"/>
+
+            <div className="ml-16  w-[213px] h-[50px]">
+            <h2 className="text-lg font-semibold mb-2">Next day as standard</h2>
+            <p  className="text-base">Order before 3pm and get your order the next day as standard.</p>
+            </div>
+          </div>
+          <div className=" flex flex-col w-[309px] h-[244px] bg-[#F9F9F9] text-[#007580]">
+          < GoCheckCircle className="h-[24px]  ml-16 mt-11 mb-1 w-[24px]"/>
+
+            <div className="ml-16  w-[213px] h-[50px]">
+            <h2 className="text-lg font-semibold mb-2">Next day as standard</h2>
+            <p  className="text-base">Order before 3pm and get your order the next day as standard.</p>
+            </div>
+          </div>
+          <div className=" flex flex-col w-[309px] h-[244px] bg-[#F9F9F9] text-[#007580]">
+             <   TbFileInvoice className="h-[24px]  ml-16 mt-11 mb-1 w-[24px]"/>
+            <div className="ml-16  w-[213px] h-[50px]">
+            <h2 className="text-lg font-semibold mb-2">Next day as standard</h2>
+            <p  className="text-base">Order before 3pm and get your order the next day as standard.</p>
+            </div>
+          </div>
+          <div className=" flex flex-col w-[309px] h-[244px] bg-[#F9F9F9] text-[#007580]">
+            <  LuSprout  className="h-[24px]  ml-16 mt-11 mb-1 w-[24px]"/>
+
+            <div className="ml-16  w-[213px] h-[50px]">
+            <h2 className="text-lg font-semibold mb-2">Next day as standard</h2>
+            <p  className="text-base">Order before 3pm and get your order the next day as standard.</p>
+            </div>
+          </div>
+          </div>
+
+         {/* Products */}
+          <div>
+          <h1  className=" text-3xl my-10 font-bold">Our Popular Products </h1>
+              
+          <div className="flex">
+
+            <div className="w-[630px]  h-[462px]">
+
+              <Image
+                        src='/1.jpg'
+                        alt="Image"
+                        height={370}
+                        width={400}
+                        className="h-[375px] w-[630px] object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <h2  className="mt-6 mb-1">The Poplar suede sofa</h2>
+              <p>$99.00</p>
+            </div>
+
+            <div className="w-[305px] ml-4 h-[462px]">
+                 <Image
+                           src='/2.jpg'
+                           alt="Image"
+                           height={370}
+                           width={305}
+                           className="h-[375px] w-[305px] object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <h2  className="mt-6 mb-1">The Dandy chair</h2>
+              <p>$99.00</p>
+            </div>
+            <div className="w-[305px] ml-4 h-[462px]">
+              <Image
+                          src='/3.jpg'
+                          alt="Image"
+                          height={370}
+                          width={305}
+                          className="h-[375px] w-[305px] object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <h2 className="mt-6 mb-1">The Dandy chair</h2>
+              <p>$99.00</p>
+            </div>
+          </div>
+
+          </div>
+    </div>
+        
     </>
   );
 }
