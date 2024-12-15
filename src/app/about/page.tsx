@@ -4,7 +4,7 @@ import { GoCheckCircle } from "react-icons/go";
 import { LuSprout } from "react-icons/lu";
 import { TbFileInvoice } from "react-icons/tb";
 
-export default function Shop() {
+export default function About() {
 
 
   return (

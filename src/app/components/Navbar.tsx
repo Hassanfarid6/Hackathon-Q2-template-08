@@ -75,7 +75,7 @@ const Navbar = () => {
                 <Link href="../about">About</Link>
                 </li>
                <li className='p-5'>
-                <Link href="../about">Contact</Link>
+                <Link href="../contact">Contact</Link>
                 </li>
           </ul>
           <p className='px-0 pt-5' >Contact: (0800) 155-1004</p>
