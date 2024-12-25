@@ -12,13 +12,13 @@ export default function Chair() {
     return(
         <>
         <div  className="bg-[#fff]">
-            <div className="container flex justify-between flex-wrap lg:flex-nowrap">
+            <div className="flex justify-between flex-wrap lg:flex-nowrap">
                 {data.map((item)=>(
                     
                     <div key={item.id} className="bg-white rounded-md lg:my-0 ">
                       <Link href={`/${item.id}`}>
                         <div>
-                            <div className="">
+                            <div className="2xl:w-[300px] xl:w-[270px] md:w-[240px]">
                               
                                 <Image
                                 src={item.pic}
