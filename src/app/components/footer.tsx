@@ -11,11 +11,11 @@ import { FaPaypal, FaCcVisa, FaCcMastercard, FaCcAmex } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex  flex-col mx-auto justify-center bg-white border-t w-[1920px] border-gray-200 px-4  sm:px-12 md:px-28">
-      <div className=" py-12">
-        <div className="flex flex-wrap justify-between gap-8">
+    <footer className="flex md:w-[85%] xl:w-[80%] flex-col mx-auto justify-between bg-white border-t w-full border-gray-200  ">
+      <div className=" py-6">
+        <div className="flex flex-wrap justify-between gap-3">
           {/* Brand Section */}
-          <div className="flex flex-col w-full  md:w-[320px] items-start">
+          <div className="flex flex-col w-full  md:w-[320px] ">
             <div className="flex items-center gap-2">
             <span >
         {/* <img className='inline-block w-8 h-8 ' src="/logo1.png" alt="Logo" /> */}
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
 
           {/* Category Section */}
-          <div className="w-full md:w-1/4 lg:w-[105px]">
+          <div className="xl:w-[105px]">
             <h4 className="text-lg font-semibold text-[#9A9CAA]">Category</h4>
             <ul className="mt-4 text-[#272343] space-y-2">
               <li>
