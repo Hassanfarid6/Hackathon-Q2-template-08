@@ -55,7 +55,7 @@ const Navbar = () => {
   </div>  
     </div>
 
-    <div className=' h-[74px] bg-[#fff] text-black'>
+    <div className=' xl:h-[74px] md:h-[54px] bg-[#fff] text-black'>
     <div className='flex md:w-[85%] xl:w-[80%] mx-auto justify-between text-base md:pt-[2px] font-normal opacity-95'>
 
 

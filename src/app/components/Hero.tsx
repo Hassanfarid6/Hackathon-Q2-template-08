@@ -7,17 +7,17 @@ const Hero =()=>{
     // console.log(props)
       return (
         <>
-        <div className='flex flex-col mx-auto justify-center w-[1920px]'>
-     <div className='flex mx-auto bg-[#F0F2F3] w-[1340px] h-[790px] rounded-[6px] text-black '>
+        <div className='flex flex-col mx-auto justify-center w-full'>
+     <div className='flex md:w-[85%] xl:w-[80%] mx-auto bg-[#F0F2F3]  xl:h-[790px] md:h-[490px] rounded-[6px] text-black '>
 
-        <div className='w-[557px] mt-64 ml-12 mr-12 h-[337px]'>
+        <div className='2xl:w-[480px] md:w-[347px] xl:h-[337px] md:h-[237px] xl:mt-64 md:mt-32  2xl:ml-28 md:ml-28  xl:mr-12 md:mr-7 '>
           <p className='text-lg'>Welcome to chairy</p>
-          <h1 className='text-[47px] leading-[50px] mt-12 mb-14 font-bold'>Best Furniture Collection For Your Interior</h1>
-          <button className='w-[171px] h-[52px] rounded-xl bg-[#029FAE] text-white'>Shop Now
-           <FaArrowRightLong className='inline-block ml-2 text-2xl' />
+          <h1 className='xl:text-5xl md:text-3xl xl:leading-[50px] md:leading-[30px] xl:mt-12 md:mt-8 xl:mb-14 md:mb-6 font-bold'>Best Furniture Collection For Your Interior</h1>
+          <button className='xl:w-[171px] md:w-[121px] xl:h-[52px] md:h-[42px] md:text-base rounded-xl bg-[#029FAE] text-white'>Shop Now
+           <FaArrowRightLong className='inline-block ml-2 xl:text-2xl md:text-xl' />
           </button>
         </div>
-        <div className="flex w-[434px] h-[580px] mt-32 mx-auto  items-center justify-center">
+        <div className="flex xl:w-[334px] md:w-[234px] xl:h-[580px] md:h-[250px] mt-32 m-auto  items-center justify-center">
           <Image src="/Product1.png" width={434} height={580} className="object-contain p-2 mt-4" alt="Product" />
            {/* <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" /> */}
         </div>   
@@ -25,11 +25,11 @@ const Hero =()=>{
     </div>
 
     
-      <div className=" w-[1920px] mx-auto justify-center h-[1850] text-black">
+      <div className=" w-full mx-auto justify-center h-[1850] text-black">
 
-        <div className="flex flex-col  mx-auto justify-center  w-[1340px]">
+        <div className="flex flex-col mx-auto justify-center  md:w-[85%] xl:w-[80%]">
 
-              <div className='ml-4 p-3 m-2 w-[1321] h-[140px] rounded-[6px] text-black '>
+              <div className='ml-2 h-[140px] rounded-[6px] text-black '>
               <Image src="/CompanyLogo.png" width={1321} height={140} alt="Logo"/>
                 {/* <Image src="/CompanyLogo.png" alt="" /> */}
             </div>
