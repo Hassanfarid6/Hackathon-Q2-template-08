@@ -1,9 +1,17 @@
+"use client"
 import React from 'react'
+import { useState } from 'react';
 import Link from 'next/link';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoAlertCircleOutline } from "react-icons/io5";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <header className=' flex flex-col mx-auto justify-between bg-white w-full 2xl:h-[203px]'>
@@ -83,8 +91,54 @@ const Navbar = () => {
 
           </div>
           <div>
-            
+             {/* Mobile Menu Button */}
+        <button
+          className="md:hidden flex items-center justify-center p-2 text-gray-700"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Menu Items */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-t border-gray-200">
+          <div className="flex flex-col gap-4 p-4">
+            <Link href="/" className="text-[#007580] text-[14px] font-medium">
+              Home
+            </Link>
+            <Link href="../shop" className="text-[14px] font-medium">
+              Shop
+            </Link>
+            <Link href="../allProducts" className="text-[14px] font-medium">
+              Product
+            </Link>
+            <Link href="../pages" className="text-[14px] font-medium">
+              Pages
+            </Link>
+            <Link href="../about" className="text-[14px] font-medium">
+              About
+            </Link>
           </div>
+          </div>
+            )}
         </div>
       </header>
       <hr />
