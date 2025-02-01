@@ -5,6 +5,7 @@ import OurProduct from "./ourProduct";
 import { details } from "../details/data";
 import Image from "next/image";
 import Link from "next/link";
+import Products from "./query";
 
 
 export default function Chair() {
@@ -40,6 +41,7 @@ export default function Chair() {
                 <Categories />
                 <NewProduct />
                 <OurProduct />
+                < Products />
         </div>
          </>
     )

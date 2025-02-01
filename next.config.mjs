@@ -1,11 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    swcMinify: true,
-  };
-  
-  export default nextConfig;
-
-
+export default {
+  images: {
+    domains: ["cdn.sanity.io"],
+  },
+};
 
 // const isWindows = process.platform === "win32";
 

@@ -21,13 +21,13 @@ export function SearchCommand() {
     }
     setLoading(true);
     try {
-      const groqquery = `*[_type == "product" && (
+      const groqquery = `*[_type == "products" && (
         lower(title) match "*${query.toLowerCase()}*" || 
         lower(description) match "*${query.toLowerCase()}*" ||
         "${query.toLowerCase()}" in tags[] 
       )] {
         _id,
-        name,
+        title, 
         price,
         "imageUrl": image.asset->url,
         category,
@@ -117,12 +117,12 @@ export function SearchCommand() {
                         <div className="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-lg overflow-hidden">
                           <img
                             src={product.imageUrl}
-                            alt={product.name}
+                            alt={product.title}
                             className="w-full h-full object-cover"
                           />
                         </div>
                         <div>
-                          <h4 className="text-lg font-medium text-gray-800">{product.name}</h4>
+                          <h4 className="text-lg font-medium text-gray-800">{product.title}</h4>
                           <p className="text-sm text-gray-500">${product.price}</p>
                         </div>
                       </div>

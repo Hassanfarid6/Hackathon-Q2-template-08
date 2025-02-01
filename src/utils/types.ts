@@ -6,7 +6,7 @@ interface SecData {
 // utils/secData.ts
  interface Product {
     _id: string;
-    name: string;
+    title: string;
     description: string;
     price: number;
     tags: string[];
