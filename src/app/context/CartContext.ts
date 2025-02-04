@@ -11,6 +11,14 @@ export interface CartItem {
   quantity: number;
   stock: number;
 }
+export interface CartItem1 {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+  quantity: number;
+  stock: number;
+}
 
 export interface CartContextType {
   items: CartItem[];

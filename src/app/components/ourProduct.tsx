@@ -126,7 +126,7 @@ export default function OurProduct() {
 
             <button
               onClick={() => addToCart({
-                id: product.id,
+                id: String(product.id),
                 image: product.image,
                 price: product.price,
                 quantity: 1,

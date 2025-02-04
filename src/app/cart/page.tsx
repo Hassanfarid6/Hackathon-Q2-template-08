@@ -183,7 +183,7 @@ export default function Cart() {
         </Link>
       ) : (
         // If user is not signed in, redirect to sign-in
-        <SignInButton mode="redirect" afterSignInUrl="/checkout">
+        <SignInButton mode="redirect" >
           <button className="md:mt-6 mt-1 w-full bg-red-500 hover:bg-red-400 hover:text-black text-white md:py-3 md:px-4 rounded shadow">
             Sign In to Checkout
           </button>
