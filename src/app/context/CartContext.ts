@@ -5,7 +5,7 @@ import { createContext, useContext } from "react";
 // Cart Interfaces
 export interface CartItem {
   id: string;
-  name: string;
+  title: string;
   price: number;
   image: string;
   quantity: number;
@@ -23,7 +23,7 @@ export interface CartContextType {
 // Wishlist Interfaces
 export interface WishlistItem {
   id: string;
-  name: string;
+  title: string;
   price: number;
   image: string;
 }

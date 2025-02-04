@@ -4,10 +4,12 @@ import Service from "../components/Service";
 import BreadCrumb from "../components/BreadCrumb";
 import Image from "next/image";
 import Link from "next/link";
+import { useAuth, SignInButton } from "@clerk/nextjs";
 import { useCart } from "../context/CartContext"; // Import the custom hook
 
 export default function Cart() {
   const { items, updateQty, removeFromCart } = useCart(); // Use items, updateQty, and removeFromCart from context
+  const { isSignedIn } = useAuth();
   console.log(items)
   // Calculate Subtotal and Total
   const subtotal = items.reduce(
@@ -167,11 +169,26 @@ export default function Cart() {
                 <span>Total</span>
                 <span>Rs. {subtotal.toLocaleString()}</span>
               </div>
-              <Link href={"/checkout"}>
+              {/* <Link href={"/checkout"}>
                 <button className="md:mt-6 mt-1 w-full  bg-blue-400 hover:bg-blue-300 hover:text-black text-white md:py-3 md:px-4 rounded shadow">
                   Check Out
                 </button>
-              </Link>
+              </Link> */}
+                 {isSignedIn ? (
+        // If user is signed in, allow checkout
+        <Link href="/checkout">
+          <button className="md:mt-6 mt-1 w-full bg-blue-400 hover:bg-blue-300 hover:text-black text-white md:py-3 md:px-4 rounded shadow">
+            Check Out
+          </button>
+        </Link>
+      ) : (
+        // If user is not signed in, redirect to sign-in
+        <SignInButton mode="redirect" afterSignInUrl="/checkout">
+          <button className="md:mt-6 mt-1 w-full bg-red-500 hover:bg-red-400 hover:text-black text-white md:py-3 md:px-4 rounded shadow">
+            Sign In to Checkout
+          </button>
+        </SignInButton>
+      )}
             </div>
           </div>
         </div>

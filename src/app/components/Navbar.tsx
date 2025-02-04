@@ -3,12 +3,14 @@ import React from 'react'
 import { useState } from 'react';
 import Link from 'next/link';
 import {SearchCommand} from "./SearchBar"
+import SignInButtonComponent from "../components/auth/loginButoon";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoAlertCircleOutline } from "react-icons/io5";
+import { UserButton, useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const { isSignedIn, user,isLoaded } = useUser();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -69,6 +71,14 @@ const Navbar = () => {
               </svg>
             </button>
            </Link>
+            {/* Account */}
+          {!isSignedIn ? (
+            <SignInButtonComponent />
+          ) : (
+            <div className="flex justify-center items-center gap-2">
+              <UserButton />
+            </div>
+          )}
           </div>
           </div>
         </div>

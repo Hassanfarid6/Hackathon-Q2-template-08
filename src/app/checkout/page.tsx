@@ -1,11 +1,11 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useCart } from "../context/CartContext";
+import { useCart } from "@/app/context/CartContext";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 // import { loadStripe } from "@stripe/stripe-js";
-import Service from "../components/Service";
-import BreadCrumb from "../components/BreadCrumb";
+import Service from "@/app/components/Service";
+import BreadCrumb from "@/app/components/BreadCrumb";
 
 export type FormData = {
   fullName: string;
@@ -311,7 +311,7 @@ export default function CheckOut() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-blue-400 hover:bg-blue-300 hover:text-black text-white py-2 rounded shadow md:text-xl font-bold transition duration-300"
+                  className="w-full bg-lightyellow hover:bg-darkyellow text-black py-3 rounded shadow font-bold transition duration-300"
                 >
                   {loading
                     ? "Processing..."
