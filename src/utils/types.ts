@@ -23,7 +23,7 @@ interface SecData {
 interface CardData {
     _id: string;
     imageUrl:string;
-    name: string;
+    title: string;
     price: number;
     rating: number;
     stockLevel:number;

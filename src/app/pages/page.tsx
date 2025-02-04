@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
+// import { CartItem, useCart } from "../context/CartContext";
+
 
 export default function Pages() {
-
-
-  return (
-    <>
+    // const { addToCart } = useCart();
+    
+    return (
+        <>
     <div className="container flex justify-center mx-auto w-[1920px] py-20">
         
     <div className="w-[675px] h-[607px]">
@@ -30,7 +32,17 @@ export default function Pages() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim. Lorem ipsum dolor sit amet, consectetur adipiscing
         </p>
         
-        <button className="bg-[#029FAE] w-[212px] h-[63px] rounded-lg text-white font-semibold text-xl mb-8">
+        <button 
+        // onClick={() => addToCart({
+        //           id:product.id,
+        //           image:product.image,
+        //           price:product.price,
+        //           quantity:1,
+        //           stock:10,
+        //           title:product.title
+        //         })
+        //         } 
+                className="bg-[#029FAE] w-[212px] h-[63px] rounded-lg text-white font-semibold text-xl mb-8">
            <ShoppingCart className="inline-block text-xl mr-3"/>
             Add to Cart
         </button>

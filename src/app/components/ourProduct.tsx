@@ -1,3 +1,4 @@
+"use client";
 import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
@@ -11,6 +12,7 @@ interface Product {
   isNew?: boolean;
   isSale?: boolean;
 }
+import { CartItem, useCart } from "../context/CartContext";
 
 export default function OurProduct() {
   const products: Product[] = [
@@ -70,6 +72,8 @@ export default function OurProduct() {
     },
   ];
 
+  const { addToCart } = useCart();
+
   return (
     <div className="container mx-auto py-20">
       <h1 className="text-4xl text-center font-bold text-[#1C1B1F] tracking-tight  mb-8">
@@ -79,6 +83,7 @@ export default function OurProduct() {
 
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (
+
           <div key={product.id} className="group relative rounded-lg bg-white">
             <div className="relative aspect-square overflow-hidden rounded-lg">
               {product.isNew && (
@@ -101,25 +106,39 @@ export default function OurProduct() {
                 />
               </Link>
             </div>
+
             <div className="mt-4 flex items-center justify-between">
-              <div>
-                <h3 className="text-sm text-[#1C1B1F]">{product.title}</h3>
-                <div className="mt-1 flex items-center gap-2">
-                  <span className="text-lg font-medium text-[#1C1B1F]">
-                    ${product.price}
+              {/* <div> */}
+              <h3 className="text-sm  text-[#1C1B1F]">{product.title}</h3>
+              <div className="mt-1 items-center gap-2">
+              <span className="text-lg font-medium text-[#1C1B1F]">
+                ${product.price}
+              </span>
+                {product.originalPrice && (
+                  <span className="text-sm text-gray-500 line-through">
+                    ${product.originalPrice}
                   </span>
-                  {product.originalPrice && (
-                    <span className="text-sm text-gray-500 line-through">
-                      ${product.originalPrice}
-                    </span>
-                  )}
-                </div>
+                )}
+                {/* </div> */}
               </div>
-              <button className="rounded-full bg-[#00B5A5] p-2 text-white transition-colors hover:bg-[#00A294]">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="sr-only">Add to cart</span>
-              </button>
             </div>
+
+
+            <button
+              onClick={() => addToCart({
+                id: product.id,
+                image: product.image,
+                price: product.price,
+                quantity: 1,
+                stock: 10,
+                title: product.title
+              })}
+              className="mt-auto flex items-center justify-center gap-2 w-full rounded-lg bg-[#00B5A5] px-4 py-2 text-white text-sm font-medium transition-all duration-300 hover:bg-[#00A294] active:scale-95 shadow-md"
+            >
+              <ShoppingCart className="h-5 w-5" />
+              <span>Add to Cart</span>
+            </button>
+
           </div>
         ))}
       </div>

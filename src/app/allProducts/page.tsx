@@ -2,6 +2,7 @@ import { ShoppingCart } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import InstaProduct from "../components/instaProduct";
 import Image from "next/image";
+// import { CartItem, useCart } from "../context/CartContext";
 import Link from "next/link";
 interface Product {
   id: number;
@@ -13,8 +14,11 @@ interface Product {
   isSale?: boolean;
   ShoppingCart?: boolean
 }
+import Products from "../components/query";
 
 export default function AllProducts() {
+  // const { addToCart } = useCart();
+
   const products: Product[] = [
     {
       id: 1,
@@ -101,16 +105,18 @@ export default function AllProducts() {
     },
   ];
 
+
   return (
     <>
-    <div className="container flex justify-center mx-auto w-[1920px] py-20">
-        <div className="ml-8 w-[86%] ">
-
-
-      <h1 className="text-4xl font-bold text-[#1C1B1F] tracking-tight  mb-8">
+    <div className="container flex-col justify-center mx-auto py-8">
+        <div className="ml-8">
+      {/* <h1 className="text-4xl font-bold text-[#1C1B1F] tracking-tight  mb-8">
         ALL Products
-      </h1>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      </h1> */}
+      </div>
+      < Products />
+
+      {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (
           <div key={product.id} className="group relative rounded-lg bg-white">
             <div className="relative aspect-square overflow-hidden rounded-lg">
@@ -142,12 +148,21 @@ export default function AllProducts() {
                     ${product.price}
                   </span>
                   {product.originalPrice && (
-                      <span className="text-sm text-gray-500 line-through">
+                    <span className="text-sm text-gray-500 line-through">
                       ${product.originalPrice}
                     </span>
                   )}
             {product.ShoppingCart && (
-                <button className="rounded-md ml-56 bg-[#029FAE] p-2 text-white transition-colors hover:bg-[#00A294]">
+              <button
+              // onClick={() => addToCart({
+                //   id:product.id,
+                //   image:product.image,
+                //   price:product.price,
+                //   quantity:1,
+                //   stock:10,
+                //   title:product.title
+                // })}
+                className="rounded-md ml-56 bg-[#029FAE] p-2 text-white transition-colors hover:bg-[#00A294]">
               <ShoppingCart className="h-5 w-5" />
               <span className="sr-only">Add to cart</span>
             </button>
@@ -159,9 +174,10 @@ export default function AllProducts() {
               </div>
             </div>
           </div>
-        ))}
-      </div>
-        </div>
+        ))} </div> */}
+        
+        
+        
     </div>
             <InstaProduct />
     </>
