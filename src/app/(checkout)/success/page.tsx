@@ -1,16 +1,16 @@
 "use client";
 import { useCart } from "../../context/CartContext";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 
 const OrderSuccessPage = () => {
   const { user, isLoaded, isSignedIn } = useUser();
-  const { clearCart } = useCart();
+  // const { clearCart } = useCart();
 
   // Clear the cart only once when the component mounts
-  useEffect(() => {
-    clearCart();
-  }, []);
+  // useEffect(() => {
+  //   clearCart();
+  // }, []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">

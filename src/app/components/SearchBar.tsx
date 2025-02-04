@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"; // For programmatic navigation
 import { Search } from "lucide-react";
 import { client } from "@/sanity/lib/client";
 import { Product } from "@/utils/types";
+import Image from "next/image";
 import Link from "next/link";
 export function SearchCommand() {
   const [open, setOpen] = useState(false);
@@ -115,7 +116,7 @@ export function SearchCommand() {
                         className="flex items-center gap-4 p-4 border border-gray-200 rounded-lg hover:shadow-lg transition cursor-pointer"
                       >
                         <div className="w-16 h-16 bg-gray-100 flex items-center justify-center rounded-lg overflow-hidden">
-                          <img
+                          <Image
                             src={product.imageUrl}
                             alt={product.title}
                             className="w-full h-full object-cover"
