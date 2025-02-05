@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrate": "node scripts/migrate.mjs"
+    "migrate": "node scripts/migrate.mjs",
+    "typegen": "npx sanity@latest schema extract && npx sanity@latest typegen generate"
+
   },
   "dependencies": {
     "@clerk/nextjs": "^6.11.0",
