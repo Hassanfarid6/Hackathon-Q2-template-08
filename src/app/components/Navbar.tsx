@@ -185,6 +185,9 @@ const Navbar = () => {
                 <Link href="../about" className="text-[14px] font-medium">
                   About
                 </Link>
+                <Link href="/cart" className="text-[14px] font-medium">
+                  Cart
+                </Link>
               </div>
             </div>
           )}
