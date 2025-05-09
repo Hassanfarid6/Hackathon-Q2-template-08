@@ -34,21 +34,21 @@ const Hero =()=>{
 
         <div className="flex flex-col mx-auto justify-center  md:w-[85%] xl:w-[80%]">
 
-              <div className='flex ml-2 mb-9 rounded-[6px] text-black '>
+              <div className='flex ml-2 mb-9 rounded-[6px] justify-between text-black '>
               {/* w-6 h-10 sm:w-8 sm:h-12 md:w-10 md:h-16 lg:w-12 lg:h-20 object-contain"
                 <Image src="/CompanyLogo.png" alt="" />
                           */}
-              <Image src="/logo(01).jpg" className="w-8 h-14 md:w-20 md:h-16 xl:h-auto lg:w-12 lg:h-20 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(02).jpg" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(03).jpg" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(04).png" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(05).png" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(06).png" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo(07).png" className="w-8 h-14 ml-3 md:w-20 md:h-16 xl:h-auto lg:w-28 lg:h-20 lg:ml-5 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(01).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(02).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(03).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(04).png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(05).png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(06).png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo(07).png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
             </div>
 
             <div className="">
-                <h1 className="font-semibold mt-4 mb-6 text-4xl ">Featured Products</h1>
+                <h1 className="font-medium text-lg mt-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl ">Featured Products</h1>
             </div>
             <div className="">
                 <Chair />
