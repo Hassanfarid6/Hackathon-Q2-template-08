@@ -13,13 +13,13 @@ export default function Chair() {
     return(
         <>
         <div  className="bg-[#fff]">
-            <div className="flex justify-between flex-wrap lg:flex-nowrap">
+            <div className="flex justify-around md:justify-between flex-wrap lg:flex-nowrap">
                 {data.map((item)=>(
                     
                     <div key={item.id} className="bg-white rounded-md lg:my-0 ">
                       <Link href={`/${item.id}`}>
                         <div>
-                            <div className="2xl:w-[300px] xl:w-[270px] md:w-[240px]">
+                            <div className="2xl:w-[300px] xl:w-[250px] md:w-[210px] w-32">
                               
                                 <Image
                                 src={item.pic}
@@ -30,7 +30,7 @@ export default function Chair() {
                                
                                 </div>
                             <div id="detail" className="text-center ">
-                                <h1 className="text-[#233d7b] text-lg font-semibold">{item.title}</h1>
+                                <h1 className="text-[#233d7b] text-sm sm:text-lg font-semibold">{item.title}</h1>
                                 <h3 className="text-[#000]  ">{item.ask}</h3>
                             </div>
                         </div>
