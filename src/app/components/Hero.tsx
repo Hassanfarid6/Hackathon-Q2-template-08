@@ -33,13 +33,13 @@ const Hero =()=>{
               <div className='flex ml-2 mb-9 rounded-[6px] justify-between text-black '>
               {/* w-6 h-10 sm:w-8 sm:h-12 md:w-10 md:h-16 lg:w-12 lg:h-20 object-contain"
                 <Image src="/CompanyLogo.png" alt="" />*/}
-              <Image src="/logo.svg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo2.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo3.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo4.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo5.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo6.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
-              <Image src="/logo7.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo.svg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo2.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo3.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo4.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo5.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo6.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/Logo7.png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
             </div>
 
             <div className="">
