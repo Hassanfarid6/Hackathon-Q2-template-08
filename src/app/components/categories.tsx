@@ -26,7 +26,7 @@ export default function Categories() {
   return (
     <section className="  py-[7rem]">
       <div className=" ">
-        <h2 className="text-4xl font-bold  mb-8">
+        <h2 className="font-medium text-lg mt-2 ml-2 mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl">
           Top Categories
         </h2>
         <div className="flex justify-between sm:grid-cols-2 lg:grid-cols-3">

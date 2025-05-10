@@ -13,10 +13,6 @@ const Hero =()=>{
         <div className='mt-20 2xl:w-[480px] md:w-[347px] xl:h-[337px] md:h-[237px] xl:mt-64 md:mt-32 2xl:ml-28 md:ml-28  xl:mr-12 md:mr-7 '>
           <p className='text-xs ml-2 mt-1 sm:text-lg md:text-xl'>Welcome to chairy</p>
           <h1 className='text-sm mt-2 ml-2 font-semibold xl:text-5xl md:text-3xl xl:leading-[50px] md:leading-[30px] xl:mt-12 md:mt-8 xl:mb-14 md:mb-6 md:font-bold'>Best Furniture Collection For Your Interior</h1>
-         {/* <p className="text-base sm:text-lg md:text-xl">Welcome to Chairy</p>
-         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight sm:leading-snug md:leading-normal lg:leading-[48px] mt-4 sm:mt-6 md:mt-8 lg:mt-10 mb-4 sm:mb-6 md:mb-8 lg:mb-12 font-bold">
-           Best Furniture Collection For Your Interior
-         </h1> */}
           <button className='text-xs w-20 h-5 mt-2 ml-2 rounded-sm xl:w-[171px] md:w-[121px] xl:h-[52px] 
           md:h-[42px] md:text-base md:rounded-xl bg-[#029FAE] text-white'>Shop Now
            <FaArrowRightLong className='inline-block text-sm ml-[4px] md:ml-2 xl:text-2xl md:text-xl' />
@@ -36,8 +32,7 @@ const Hero =()=>{
 
               <div className='flex ml-2 mb-9 rounded-[6px] justify-between text-black '>
               {/* w-6 h-10 sm:w-8 sm:h-12 md:w-10 md:h-16 lg:w-12 lg:h-20 object-contain"
-                <Image src="/CompanyLogo.png" alt="" />
-                          */}
+                <Image src="/CompanyLogo.png" alt="" />*/}
               <Image src="/logo01.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
               <Image src="/logo(02).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
               <Image src="/logo(03).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
