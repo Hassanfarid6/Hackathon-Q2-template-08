@@ -8,9 +8,9 @@ export default function Pages() {
     
     return (
         <>
-    <div className="container flex justify-center mx-auto w-[1920px] py-20">
+    <div className=" md:container flex justify-center mx-auto w-[90%] lg:w-[1920px] lg:py-20">
         
-    <div className="w-[675px] h-[607px]">
+    <div className="w-[200px] h-[200px] lg:w-[675px] lg:h-[607px]">
     <Image
                   src='/02.jpg'
                   alt="Image"
@@ -19,7 +19,7 @@ export default function Pages() {
                   className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
      />
     </div>
-    <div className="w-[541px] ml-24 h-[607px]">
+    <div className="lg:w-[541px] lg:ml-24 lg:h-[607px]">
         <h2 className="w-[541px] h-[132px] font-bold text-6xl mb-10">
         Library Stool Chair
         </h2>

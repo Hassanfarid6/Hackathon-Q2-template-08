@@ -1,6 +1,6 @@
 "use client"
 import { ShoppingCart } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import InstaProduct from "../components/instaProduct";
 import { useEffect, useState } from "react";
 import { CartItem, useCart } from "../context/CartContext";
@@ -141,7 +141,7 @@ const query = `*[_type == "products"]{
 
   return (
     <>
-    <div className="container md:w-[94%] flex-col justify-center px-4 mx-auto py-8">
+    <div className="md:container w-full md:w-[94%] flex-col justify-center px-4 mx-auto py-8">
         <div className="ml-8">
       {/* <h1 className="text-4xl font-bold text-[#1C1B1F] tracking-tight  mb-8">
         ALL Products
@@ -150,7 +150,7 @@ const query = `*[_type == "products"]{
       < Products />
 
     {/* // Query for  */}
-     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 sm:gap-6">
         {products.map((product) => (
           <div key={product._id} className="border rounded-md shadow-md bg-white">
             <div className="relative w-full">
@@ -164,9 +164,9 @@ const query = `*[_type == "products"]{
               />
             </div>
           <div className="mt-4 flex items-center justify-between">
-            <h2 className="text-lg ml-1 font-semibold mt-3">{product.title}</h2>
+            <h2 className="text-sm sm:text-lg ml-0 sm:ml-1 font-normal sm:font-semibold mt-0 sm:mt-3">{product.title}</h2>
             {/* <p className="text-gray-500">Category: {product.category._type}</p> */}
-            <p className="text-xl font-bold mr-1 mt-2">${product.price}</p>
+            <p className="text-sm sm:text-lg ml-0 sm:ml-1 font-normal sm:font-semibold mt-0 mr-1 sm:mt-2">${product.price}</p>
           </div>
                 <button
                   onClick={() => addToCart({
