@@ -24,19 +24,20 @@ export default function Categories() {
   ];
 
   return (
-    <section className="  py-[7rem]">
-      <div className=" ">
-        <h2 className="font-medium text-lg mt-2 ml-2 mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl">
+    // <section className="py-7 md:py-[7rem]">
+      <div className="my-5 md:py-[7rem]">
+        <h2 className="font-medium text-lg mt-1 mb-1 sm:mt-2 sm:ml-2 sm:mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl">
           Top Categories
         </h2>
-        <div className="flex justify-between sm:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="flex justify-between sm:grid-cols-2 lg:grid-cols-3"> */}
+        <div className="flex justify-around md:justify-between flex-wrap lg:flex-nowrap">
           {categories.map((category) => (
             <Link
               key={category.name}
               href={"../components/productDectription/discription"}
               className="group relative overflow-hidden rounded-lg"
             >
-              <div className="aspect-[4/3] w-full">
+              <div className="2xl:w-[300px] xl:w-auto xl:m-1 md:w-[210px] w-32">
                 <Image
                   src={category.image}
                   alt={category.name}
@@ -60,6 +61,6 @@ export default function Categories() {
           ))}
         </div>
       </div>
-    </section>
+    // </section>
   );
 }
