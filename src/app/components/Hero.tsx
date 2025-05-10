@@ -30,7 +30,7 @@ const Hero =()=>{
     </div>
 
     
-      <div className=" w-full mx-auto justify-center h-[1850] text-black">
+      <div className="w-full mx-auto justify-center h-[1850] text-black">
 
         <div className="flex flex-col mx-auto justify-center  md:w-[85%] xl:w-[80%]">
 
@@ -38,7 +38,7 @@ const Hero =()=>{
               {/* w-6 h-10 sm:w-8 sm:h-12 md:w-10 md:h-16 lg:w-12 lg:h-20 object-contain"
                 <Image src="/CompanyLogo.png" alt="" />
                           */}
-              <Image src="/logo(01).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
+              <Image src="/logo01.jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-12 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
               <Image src="/logo(02).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
               <Image src="/logo(03).jpg" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
               <Image src="/logo(04).png" className="w-8 h-14 md:w-20 md:h-16 lg:w-28 xl:w-20 lg:h-20 xl:h-24 object-contain" width={120} height={200} alt="Logo"/>
@@ -48,7 +48,7 @@ const Hero =()=>{
             </div>
 
             <div className="">
-                <h1 className="font-medium text-lg mt-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl ">Featured Products</h1>
+                <h1 className="font-medium text-lg mt-2 ml-2 mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl ">Featured Products</h1>
             </div>
             <div className="">
                 <Chair />
