@@ -31,7 +31,7 @@ const Hero =()=>{
           </button>
         </div>
         <div className="flex w-36 h-44 mt-7 xl:w-[334px] md:w-[234px] xl:h-[580px] md:h-[250px] md:mt-32 md:m-auto  md:items-center md:justify-center">
-          <Image src="/Product1.png" width={434} height={580} className="object-contain p-2 mt-4" alt="Product" />
+          <Image src="/Product1.svg" width={434} height={580} className="object-contain p-2 mt-4" alt="Product" />
            {/* <img src="/Product1.png" className="object-contain p-2 mt-4" alt="Product" /> */}
         </div>   
      </div>

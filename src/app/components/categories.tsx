@@ -26,7 +26,7 @@ export default function Categories() {
   return (
     // <section className="py-7 md:py-[7rem]">
       <div className="my-5 md:py-[7rem]">
-        <h2 className="font-medium text-lg mt-1 mb-1 sm:mt-2 sm:ml-2 sm:mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl">
+        <h2 className="font-medium text-lg ml-2 mt-1 mb-1 sm:mt-2 sm:ml-2 sm:mb-2 sm:font-semibold md:mt-4 md:mb-6 md:text-4xl">
           Top Categories
         </h2>
         {/* <div className="flex justify-between sm:grid-cols-2 lg:grid-cols-3"> */}
@@ -43,13 +43,13 @@ export default function Categories() {
                   alt={category.name}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   priority
-                  width={400}
-                  height={400}
+                  width={312}
+                  height={312}
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
-                <div className="absolute bottom-0 p-6">
-                  <h3 className="mb-2 font-inter text-xl font-medium text-white">
+                <div className="absolute bottom-0 p-1 sm:p-6">
+                  <h3 className=" mb-0 md:mb-2  md:font-inter text-sm sm:text-xl font-medium text-white">
                     {category.name}
                   </h3>
                   <p className="font-inter text-sm text-gray-200">
