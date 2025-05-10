@@ -37,11 +37,12 @@ export default function Categories() {
               href={"../components/productDectription/discription"}
               className="group relative overflow-hidden rounded-lg"
             >
-              <div className="2xl:w-[300px] xl:w-auto xl:m-1 md:w-[210px] w-32">
+              <div className="xl:m-1 xs:w-[100px] sm:w-32 md:w-[210px] lg:w-[250px] xl:w-[310px] 2xl:w-[330px]  ">
+              {/* <div className="2xl:w-[300px] xl:w-[340px] lg:[90px] xl:m-1 md:w-[210px] w-32"> */}
                 <Image
                   src={category.image}
                   alt={category.name}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   priority
                   width={312}
                   height={312}

@@ -53,7 +53,7 @@ export default function NewProduct() {
             </div>
             <div className="aspect-square">
               <Image
-                src="/01.jpg"
+                src="/08.jpg"
                 alt="Vintage white chair duplicate"
                 className="h-full w-full object-cover"
                 width={500}
